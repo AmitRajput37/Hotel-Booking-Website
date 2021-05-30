@@ -6,13 +6,32 @@
     <body>
         <div>
             <div>
-                <img src="assests\images\logo.png" height="200" width="200" alt="logo">
-                <a href="login.html" target="_blank">Login</a>
+                <a href="index.html"><img src="assests\images\logo.png" height="200" width="200" alt="logo"></a>
+                <a href="login.html">Login</a>
             </div>
 
         <div>
+            <form autocomplete="off" action="payment.html">
             <img src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-            <a href="payment.html"><p>Book Now</p></a>
+            <br><br>
+            <label>Adults:</label>
+            <input type="number" min="1" name="adult">
+            <br>
+            <label>Name:</label>
+            <input type="text" name="name" required>
+            <br>
+            <label>From Date:</label>
+            <input type="date" name="fromdate" required>
+            <br>
+            <label>To Date:</label>
+            <input type="date" name="todate"required>
+            <br>
+            <label>Total:</label>
+            <input type="text" name="price" readonly>
+            <br>
+            <input type="submit" value="Book Now">
+
+
             <h2>Radisson Blu Hotel</h2>
             <p>RATING</p>
             <p>5 star</p>
@@ -29,10 +48,11 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.
                  Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
+        </form>
         </div>
 
         <div>
-            <a href="contact.html" target="_blank">Contact Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
 
         <div>
