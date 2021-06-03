@@ -1,0 +1,19 @@
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#logo{
+    height: 60px;
+    width: 60px;
+}
+
+.city-img{
+    height: 150px;
+    width: 150px;
+}
+
+.social-media-img{
+    height: 20px;
+    width: 22px;
+}
