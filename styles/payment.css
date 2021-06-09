@@ -1,6 +1,12 @@
 html,body{
     height: 100%;
     width: 100%;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+header{
+    background-color: rosybrown;
 }
 
 #logo{
@@ -13,7 +19,34 @@ html,body{
     width: 500px;
 }
 
+#hotel-information{
+    
+    background-color: rgb(132,136,139);
+    width: 50%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#personal-information{
+    margin: 2%;
+}
+
+#amount-details{
+    margin: 2%;
+    border: 1px solid black;
+    border-radius: 5px;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
 .social-media-img{
     height: 20px;
     width: 22px;
+}
+
+footer{
+    background-color: rosybrown;
 }
