@@ -1,78 +1,90 @@
 <html>
-    <head>
-        <title>Detail</title>
-        <link href="styles\detail.css" rel="stylesheet">
-    </head>
 
-    <body>
-        <div>
-            <header>
-                <a href="index.html"><img id="logo" src="assests\images\logo.png" alt="logo"></a>
-                <a href="login.html">Login</a>
-            </header>
+<head>
+    <title>Detail</title>
+    <link href="styles\detail.css" rel="stylesheet">
+    <link href="styles\common.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
 
-        <div>
-            <form autocomplete="off" action="payment.html">
-            <img id="hotel-image" src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg" alt="Radisson Blu Hotel">
-        </div>
-        <div id="information-inputs">
-            <label>Adults:</label>
-            <input type="number" min="1" name="adult">
-            <br>
-            <label>Name:</label>
-            <input type="text" name="name" required>
-            <br>
-            <label>From Date:</label>
-            <input type="date" name="fromdate" required>
-            <br>
-            <label>To Date:</label>
-            <input type="date" name="todate"required>
-            <br>
-            <label>Total:</label>
-            <input type="text" name="price" readonly>
-            <br>
-            <input type="submit" value="Book Now">
-        </div>
+<body>
+    <div>
+        <header>
 
-        <div id="hotel-information">
-            <h2>Radisson Blu Hotel</h2>
-            <p>RATING</p>
-            <p>5 star</p>
-            <p>AMENITIES</p>
+            <img id="logo" src="assests\images\logo.png" alt="logo">
+            <a id="login" href="login.html">Login</a>
 
-            <ul>
-                <li>Room Service</li>
-                <li>Restaurant</li>
-                <li>Business Center</li>
-                <li>Fitness Center</li>
-                <li>Pool</li>
-            </ul>
-            <h5>DESCRIPTION</h5>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.
-                 Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-            </p>
-        </form>
-        </div>
+        </header>
+        <section>
+            <div>
+                <form autocomplete="off" action="payment.html">
+                    <img id="hotel-image"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt="Radisson Blu Hotel">
+            </div>
+            <div id="information-inputs">
+                <label>Adults:</label>
+                <input type="number" min="1" name="adult">
+                <br>
+                <label>Name:</label>
+                <input type="text" name="name" required>
+                <br>
+                <label>From Date:</label>
+                <input type="date" name="fromdate" required>
+                <br>
+                <label>To Date:</label>
+                <input type="date" name="todate" required>
+                <br>
+                <label>Total:</label>
+                <input type="text" name="price" readonly>
+                <br>
+                <input type="submit" value="Book Now">
+            </div>
 
+            <div id="hotel-information">
+                <h2>Radisson Blu Hotel</h2>
+                <p>RATING</p>
+                <p>5 star</p>
+                <p>AMENITIES</p>
+
+                <ul>
+                    <li>Room Service</li>
+                    <li>Restaurant</li>
+                    <li>Business Center</li>
+                    <li>Fitness Center</li>
+                    <li>Pool</li>
+                </ul>
+                <h5>DESCRIPTION</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore aliqua.
+                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat.
+                </p>
+                </form>
+            </div>
+        </section>
         <footer>
             <article>
-            <a href="contact.html">Contact Us</a>
+                <a id="contact-us" href="contact.html">Contact Us</a>
             </article>
 
-        <article>
-            <a href="https://www.facebook.com" target="_blank"><img class="social-media-img" src="assests/images/facebook.png"></a>
+            <article id="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
+                        src="assests/images/facebook.png"></a>
 
-            <a href="https://www.instagram.com" target="_blank"><img class="social-media-img" src="assests/images/instagram.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="social-media-img"
+                        src="assests/images/instagram.png"></a>
 
-            <a href="https://twitter.com" target="_blank"><img class="social-media-img" src="assests/images/twitter.png"></a>
-        </article>
+                <a href="https://twitter.com" target="_blank"><img class="social-media-img"
+                        src="assests/images/twitter.png"></a>
+            </article>
 
-        <article>
-            &copy; 2020 ROOM SEARCH PVT LTD.
-        </article>
-
+            <article id="copyright">
+                &copy; 2020 ROOM SEARCH PVT LTD.
+            </article>
         </footer>
 
-        </div>
-    </body>
+    </div>
+</body>
+
 </html>

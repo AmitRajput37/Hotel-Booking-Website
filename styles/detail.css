@@ -1,23 +1,7 @@
-html,body{
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    background-color: #e0e0e0;
-}
-
-header{
-    background-color: rosybrown;
-}
-
-#logo{
-    height: 60px;
-    width: 60px;
-}
-
 #hotel-image{
     height: 500px;
     width: 500px;
-    margin-top: 2%;
+    margin-top: 6%;
     margin-left: 4%;
     margin-right: 4%;
 }
@@ -31,15 +15,10 @@ header{
 #hotel-information{
     margin-top: 1%;
     margin-right: 4%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     margin-left: 4%;
 }
-
-.social-media-img{
-    height: 20px;
-    width: 22px;
-}
-
-footer{
-    background-color: rosybrown;
+section{
+    height: 100%;
+    overflow: scroll;
 }
