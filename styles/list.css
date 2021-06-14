@@ -13,11 +13,6 @@
     justify-content: space-between;
     margin-bottom: 7%;
 }
-
-section{
-    height: 100%;
-    overflow: scroll;
-}
 #hotel-images{
     display: grid;
     grid-template-columns: repeat(2, 2fr);

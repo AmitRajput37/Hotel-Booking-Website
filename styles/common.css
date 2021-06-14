@@ -19,9 +19,8 @@ header{
     background-color: rosybrown;
     width: 100%;
     height: 60px;
-    position: fixed;
+    position: sticky;
     top: 0;
-    box-sizing: content-box;
     
 }
 
@@ -37,6 +36,10 @@ header{
     line-height: 60px;
     padding-right: 20px;
     font-weight: bold;
+}
+
+section{
+    overflow: hidden;
 }
 
 .social-media-img{
@@ -70,7 +73,7 @@ header{
 footer{
     background-color: rosybrown;
     width: 100%;
-    position: fixed;
+    position: sticky;
     bottom: 0;
     height: 60px;
     display: flex;

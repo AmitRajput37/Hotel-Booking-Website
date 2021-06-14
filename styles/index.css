@@ -35,6 +35,11 @@
     padding: 4%;
     border-radius: 25%; 
 }
+
 #view-more{
     margin-left: 40%;
+}
+
+section{
+    overflow: hidden;
 }
