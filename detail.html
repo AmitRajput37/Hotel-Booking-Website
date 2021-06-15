@@ -16,36 +16,51 @@
 
         </header>
         <section>
-            <div>
+            <div id="hotel-booking">
+            <div id="hotel-image-container">
                 <form autocomplete="off" action="payment.html">
                     <img id="hotel-image"
                         src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
                         alt="Radisson Blu Hotel">
             </div>
             <div id="information-inputs">
+                <!-- <ul> -->
+                <div class="inputs">
                 <label>Adults:</label>
                 <input type="number" min="1" name="adult">
+            </div>
                 <br>
+                <div class="inputs">
                 <label>Name:</label>
                 <input type="text" name="name" required>
+            </div>
                 <br>
+                <div class="inputs">
                 <label>From Date:</label>
                 <input type="date" name="fromdate" required>
+            </div>
                 <br>
+                <div class="inputs">
                 <label>To Date:</label>
                 <input type="date" name="todate" required>
+            </div>
                 <br>
+                <div class="inputs">
                 <label>Total:</label>
                 <input type="text" name="price" readonly>
-                <br>
-                <input type="submit" value="Book Now">
             </div>
-
+                <br>
+                <div id="button">
+                <!-- <input type="submit" value="Book Now"> -->
+                <button>Book Now</button>
+            </div>
+            </div>
+        </div>
             <div id="hotel-information">
                 <h2>Radisson Blu Hotel</h2>
-                <p>RATING</p>
+                <h5>RATING</h5>
                 <p>5 star</p>
-                <p>AMENITIES</p>
+                <h5>AMENITIES</h5>
 
                 <ul>
                     <li>Room Service</li>
@@ -64,11 +79,15 @@
             </div>
         </section>
         <footer>
-            <article>
-                <a id="contact-us" href="contact.html">Contact Us</a>
-            </article>
+            <div id="contact-us">
+                <a href="contact.html">Contact Us</a>
+            </div>
 
-            <article id="social-media">
+            <div id="copyright">
+                &copy; 2020 ROOM SEARCH PVT LTD.
+            </div>
+
+            <div id="social-media">
                 <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
                         src="assests/images/facebook.png"></a>
 
@@ -77,11 +96,7 @@
 
                 <a href="https://twitter.com" target="_blank"><img class="social-media-img"
                         src="assests/images/twitter.png"></a>
-            </article>
-
-            <article id="copyright">
-                &copy; 2020 ROOM SEARCH PVT LTD.
-            </article>
+            </div>
         </footer>
 
     </div>

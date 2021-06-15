@@ -1,28 +1,40 @@
 .hotel-images{
     height: 200px;
     width: 250px;
+    display: flex;
+    justify-content: left;
 }
 
 .hotel-image-container{
-    margin: 20%;
-    margin-top: 3%;
-    background-color: rgb(132,136,139);
-    width: 70%;
+    /* margin: 21%;
+    margin-top: 3%; */
+    background-color: lightgray;
+    /* width: 70%; */
+    width: 430px;
+    margin-left: 150px;
+    padding-right: 10px;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
     justify-content: space-between;
+    /* justify-items: self-start; */
     margin-bottom: 7%;
 }
-#hotel-images{
+
+.hotel-info{
+    padding-right: 75px;
+}
+.hotel-image-list{
+    /* display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; */
     display: grid;
     grid-template-columns: repeat(2, 2fr);
-    grid-column-gap: 20px;
     grid-row-gap: 20px;
     gap: 10px;
     
 }
 #list-view{
-    margin-top: 5%;
+    margin-top: 1%;
 }
 
 #list{
@@ -39,4 +51,7 @@ ul li{
 }
 #map-view{
     display: none;
+}
+section{
+    overflow: hidden;
 }

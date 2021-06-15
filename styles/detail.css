@@ -1,20 +1,74 @@
 #hotel-image{
-    height: 500px;
+    max-height: 350px;
     width: 500px;
-    margin-top: 4%;
+    /* margin-top: 4%;
     margin-left: 4%;
-    margin-right: 4%;
+    margin-right: 4%; */
 }
 
 #information-inputs{
-    margin-left: 4%;
-    margin-right: 4%;
-    margin-bottom: 1%;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    flex-direction: column;
+    border: 1px solid black;
+    padding: 30px;
+    align-content: space-between;
+    /* height: 350px; */
+
 }
+input{
+    width: 60%;
+}
+button{
+    padding: 10px;
+}
+#button{
+    display: flex;
+    justify-content: center;
+    margin-left: 22px;
+}
+.inputs{
+    /* display: flex;
+    justify-content: space-around; */
+    display: flex;
+    justify-content: flex-end;
+    padding: .5em;
+}
+.inputs > label {
+    padding: .2em 1em .2em 0;
+    flex: 1;
+  }
+  h5{
+      font-family: cursive;
+  }
 
 #hotel-information{
     margin-top: 1%;
     margin-right: 4%;
     margin-bottom: 4%;
     margin-left: 4%;
+}
+#hotel-booking{
+    display: flex;
+    flex-direction: row;
+    margin-top: 2%;
+    margin-left: 2%;
+    margin-right: 2%;
+    /* border: 1px solid black; */
+    padding: 20px;
+    max-height: 400px;
+}
+#hotel-image-container{
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    height: 400px;
+    max-height: 400px;
+
 }

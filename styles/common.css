@@ -21,55 +21,48 @@ header{
     height: 60px;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     
 }
 
 #logo{
     height: 60px;
     width: 60px;
-    margin: 0 auto;
+    margin-left: 1%;
 }
 
 #login{
-    float: right;
     color: black;
-    line-height: 60px;
-    padding-right: 20px;
+    margin-right: 2%;
     font-weight: bold;
 }
 
 section{
     overflow: hidden;
+    /* display: flex; */
 }
 
 .social-media-img{
-    line-height: 60px;
     height: 20px;
     width: 22px;
-    padding-top: 22px;
-    line-height: 60px;
-    margin-right: 3px;
 }
 
 #social-media{
-    position: absolute;
-    margin-left: 93%;
+    margin-right: 2%;
 }
 
 #contact-us{
     color: black;
-    float: left;
-    line-height: 60px;
-    padding-left: 17px;
+    margin-left: 2%;
 }
 
 #copyright{
     font-size: 10px;
-    padding-top: 49px;
     font-weight: bold;
-    margin-left: 38%;
-    text-align: center;
 }
+
 footer{
     background-color: rosybrown;
     width: 100%;
@@ -77,4 +70,7 @@ footer{
     bottom: 0;
     height: 60px;
     display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center;
 }

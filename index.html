@@ -1,62 +1,80 @@
 <!DOCTYPE html>
-    <head>
-        <title>Index</title>
-        <link href="styles\index.css" rel="stylesheet">
-        <link href="styles\common.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    </head>
+
+<head>
+    <title>Index</title>
+    <link href="styles\index.css" rel="stylesheet">
+    <link href="styles\common.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+</head>
 
 <body>
-        
+
     <header>
-       
-            <img id="logo" src="assests\images\logo.png" alt="logo">
-            <a id="login" href="login.html">Login</a>
-        
+
+        <img id="logo" src="assests\images\logo.png" alt="logo">
+        <a id="login" href="login.html">Login</a>
+
     </header>
 
     <section>
-        <article id="content"> 
+        <div id="content">
+            <div>
+                <input id="search-bar" type="text" placeholder="City">
+            </div>
+        </div>
+        <div id="city-images">
+            <div id="city-image-container">
+                <a href="list.html">
+                    <div id="image1-container">
+                        <p id="text">Delhi</p>
+                    </div>
+                </a>
+            </div>
 
-            <input id="search-bar" type="text" placeholder="City">
-        </article>
-           
-        <article id="city-image-container">
+            <div id="city-image-container">
+                <div id="image2-container">
+                    <p id="text">Goa</p>
+                </div>
+            </div>
 
-        <a href="list.html"><img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" height="300" 
-            width="300"></a>
+            <div id="city-image-container">
+                <div id="image3-container">
+                    <p id="text">Hyderabad</p>
+                </div>
+            </div>
 
-        <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg">
-
-        <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg">
-
-        <img class="city-img" src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg">
-
-        <article>
+            <div id="city-image-container">
+                <div id="image4-container">
+                    <p id="text">Kolkata</p>
+                </div>
+            </div>
+        </div>
+        <div>
             <a id="view-more" href="index.html">View more>></a>
-        </article>
+        </div>
 
-        </article>
 
-        
     </section>
 
     <footer>
-        <article>
-            <a id="contact-us" href="contact.html">Contact Us</a>
-        </article>
+        <div id="contact-us">
+            <a href="contact.html">Contact Us</a>
+        </div>
 
-        <article id="social-media">
-            <a href="https://www.facebook.com" target="_blank"><img class="social-media-img" src="assests/images/facebook.png"></a>
-
-            <a href="https://www.instagram.com" target="_blank"><img class="social-media-img" src="assests/images/instagram.png"></a>
-
-            <a href="https://twitter.com" target="_blank"><img class="social-media-img" src="assests/images/twitter.png"></a>
-        </article>
-
-        <article id="copyright">
+        <div id="copyright">
             &copy; 2020 ROOM SEARCH PVT LTD.
-        </article>
+        </div>
+
+        <div id="social-media">
+            <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
+                    src="assests/images/facebook.png"></a>
+
+            <a href="https://www.instagram.com" target="_blank"><img class="social-media-img"
+                    src="assests/images/instagram.png"></a>
+
+            <a href="https://twitter.com" target="_blank"><img class="social-media-img"
+                    src="assests/images/twitter.png"></a>
+        </div>
     </footer>
 
 </body>
