@@ -21,12 +21,18 @@ header{
     height: 60px;
     position: sticky;
     top: 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     
 }
 
+#login-button{
+    margin-right: 2%;
+}
+
+#header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 #logo{
     height: 60px;
     width: 60px;
@@ -41,7 +47,6 @@ header{
 
 section{
     overflow: hidden;
-    /* display: flex; */
 }
 
 .social-media-img{
@@ -54,13 +59,15 @@ section{
 }
 
 #contact-us{
-    color: black;
+    /* color: black; */
     margin-left: 2%;
+    margin-top: 1%;
 }
 
 #copyright{
     font-size: 10px;
     font-weight: bold;
+    margin-top: 7px;
 }
 
 footer{
@@ -69,8 +76,17 @@ footer{
     position: sticky;
     bottom: 0;
     height: 60px;
-    display: flex;
+}
+
+#footer-div{
+    /* display: flex;
     justify-content: space-between;
-    flex-direction: row;
+    /* flex-direction: row; */
+    /* align-items: center;
+    align-content: center; */
+    /* margin-top: 50px; */ 
+    display: flex;
+    justify-content: center;
     align-items: center;
+    justify-content: space-between;
 }

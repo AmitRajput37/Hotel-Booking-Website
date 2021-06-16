@@ -5,96 +5,226 @@
     <link href="styles\list.css" rel="stylesheet">
     <link href="styles\common.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 </head>
 
 <body>
     <header>
-
-        <img id="logo" src="assests\images\logo.png" alt="logo">
-        <a id="login" href="login.html">Login</a>
-
+        <div id="header">
+            <img id="logo" src="assests\images\logo.png" alt="logo">
+            <div id="login-button">
+                <button type="button" class="btn btn-light btn-sm" data-toggle="modal" data-target="#login-modal">
+                    LOGIN
+                </button>
+            </div>
+        </div>
     </header>
     <section>
 
-        <div>
-            <ul id="list">
-                <a href="list.html#list-view">
-                    <li>List View</li>
-                </a>
-                <a href="list.html#map-view">
-                    <li>Map View</li>
-                </a>
-            </ul>
-        </div>
-        <div class="hotel-image-list" id="list-view">
+        <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <a class="nav-link active" style="color: black;" id="pills-home-tab" data-toggle="pill"
+                    href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">List View</a>
+            </li>
+            <li class="nav-item" role="presentation">
+                <a class="nav-link" style="color: black;" id="pills-profile-tab" data-toggle="pill"
+                    href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Map View</a>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+                <div class="hotel-image-list">
+                    <div class="hotel-image-container">
+                        <div class="hotels">
+                            <a href="detail.html"><img class="hotel-images"
+                                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                                    alt="Radisson Blu Hotel"></a>
+                        </div>
+                        <div class="hotel-info">
+                            <a href="detail.html" style="color: black; text-decoration: none;">
+                                <h3>Radisson Blu Hotel</h3>
+                                <p>4.5 star</p>
+                                <p>New Delhi</p>
+                            </a>
+                        </div>
+
+                    </div>
+
+                    <div class="hotel-image-container">
+                        <div>
+                            <img class="hotel-images"
+                                src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+                                alt="The Lalit New Delhi">
+                        </div>
+                        <div class="hotel-info">
+                            <h3>The Lalit New Delhi</h3>
+                            <p>5 star</p>
+                            <p>New Delhi</p>
+                        </div>
+                    </div>
+
+
+                    <div class="hotel-image-container">
+                        <div>
+                            <img class="hotel-images"
+                                src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
+                                alt="Taj Palace">
+                        </div>
+                        <div class="hotel-info-3">
+                            <h3>Taj Palace</h3>
+                            <p>4.0 star</p>
+                            <p>New Delhi</p>
+                        </div>
+                    </div>
+
+                <!-- <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
+
+                    <p>MAP VIEW</p> -->
+
+
+            </div>
+
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
+
+                    
+                </div>
+            </div>
+
+            <!-- <div class="hotel-image-list" >
             <div class="hotel-image-container">
                 <div class="hotels">
-                <a href="detail.html"><img class="hotel-images"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                        alt="Radisson Blu Hotel"></a>
-                    </div>
-                <div>
-                    <a href="detail.html"><h3>Radisson Blu Hotel</h3>
-                    <p>4.5 star</p>
-                    <p>New Delhi</p></a>
-                </div>
-
-            </div>
-
-            <div class="hotel-image-container">
-                <div>
-                <img class="hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                    alt="The Lalit New Delhi">
-                </div>
-                <div>
-                <h3>The Lalit New Delhi</h3>
-                <p>5 star</p>
-                <p>New Delhi</p>
-            </div>
-            </div>
-
-
-            <div class="hotel-image-container">
-                <div>
-                <img class="hotel-images" src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                    alt="Taj Palace">
+                    <a href="detail.html"><img class="hotel-images"
+                            src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                            alt="Radisson Blu Hotel"></a>
                 </div>
                 <div class="hotel-info">
-                <h3>Taj Palace</h3>
-                <p>4.0 star</p>
-                <p>New Delhi</p>
-            </div>
+                    <a href="detail.html" style="color: black;">
+                        <h3>Radisson Blu Hotel</h3>
+                        <p>4.5 star</p>
+                        <p>New Delhi</p>
+                    </a>
+                </div>
+
             </div>
 
-            <div id="map-view">
+            <div class="hotel-image-container">
+                <div>
+                    <img class="hotel-images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
+                        alt="The Lalit New Delhi">
+                </div>
+                <div class="hotel-info">
+                    <h3>The Lalit New Delhi</h3>
+                    <p>5 star</p>
+                    <p>New Delhi</p>
+                </div>
+            </div>
+
+
+            <div class="hotel-image-container">
+                <div>
+                    <img class="hotel-images"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg" alt="Taj Palace">
+                </div>
+                <div class="hotel-info-3">
+                    <h3>Taj Palace</h3>
+                    <p>4.0 star</p>
+                    <p>New Delhi</p>
+                </div>
+            </div> -->
+
+            <!-- <div id="map-view">
 
                 <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
 
                 <p>MAP VIEW</p>
 
             </div>
-        </div>
+        </div> -->
     </section>
     <footer>
-        <div id="contact-us">
-            <a href="contact.html">Contact Us</a>
-        </div>
 
-        <div id="copyright">
-            &copy; 2020 ROOM SEARCH PVT LTD.
-        </div>
+        <div id="footer-div">
+            <div id="contact-us">
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#contact-us-modal">
+                    Contact Us
+                </button>
+            </div>
 
-        <div id="social-media">
-            <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
-                    src="assests/images/facebook.png"></a>
+            <div id="copyright">
+                &copy; 2020 ROOM SEARCH PVT LTD.
+            </div>
 
-            <a href="https://www.instagram.com" target="_blank"><img class="social-media-img"
-                    src="assests/images/instagram.png"></a>
+            <div id="social-media">
+                <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
+                        src="assests/images/facebook.png"></a>
 
-            <a href="https://twitter.com" target="_blank"><img class="social-media-img"
-                    src="assests/images/twitter.png"></a>
+                <a href="https://www.instagram.com" target="_blank"><img class="social-media-img"
+                        src="assests/images/instagram.png"></a>
+
+                <a href="https://twitter.com" target="_blank"><img class="social-media-img"
+                        src="assests/images/twitter.png"></a>
+            </div>
         </div>
     </footer>
+
+    <!-- Login-Modal -->
+    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <label>Username:</label>&nbsp
+                        <input type="text" placeholder="Enter Username" class="form-control" required>
+                        <br>
+                        <label>Password:</label>&nbsp
+                        <input type="password" placeholder="Enter Password" class="form-control" required>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact-us-Modal -->
+    <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        Thank you for reaching out!!!<br>
+                        Please enter your email and we will get back to you.
+                        <br><br>
+                        <label>Email:</label>
+                        <input type="email" placeholder="Enter your email id">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
 </body>
 

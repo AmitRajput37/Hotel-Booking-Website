@@ -10,7 +10,7 @@
     margin-top: 3%; */
     background-color: lightgray;
     /* width: 70%; */
-    width: 430px;
+    width: 550px;
     margin-left: 150px;
     padding-right: 10px;
     display: flex;
@@ -19,9 +19,16 @@
     /* justify-items: self-start; */
     margin-bottom: 7%;
 }
-
+.hotel-image-container:hover{
+    background-color: rosybrown;
+}
 .hotel-info{
-    padding-right: 75px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.hotel-info-3{
+    padding: 20px;
+    padding-right: 140px;
 }
 .hotel-image-list{
     /* display: flex;
@@ -50,7 +57,7 @@ ul li{
     font-weight: bold;
 }
 #map-view{
-    display: none;
+    /* display: none; */
 }
 section{
     overflow: hidden;
