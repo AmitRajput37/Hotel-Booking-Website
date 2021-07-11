@@ -25,13 +25,20 @@
     
 }
 
-#city-images{
+#city-images-1{
     height: 260px;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: nowrap;
+}
 
+#city-images-2{
+    height: 260px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 
 #image1-container{
@@ -72,6 +79,54 @@
 }
 #image4-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg');
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px grey;
+}
+#image5-container{
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg');
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px grey;
+}
+#image6-container{
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg');
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px grey;
+}
+#image7-container{
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg');
+    height: 150px;
+    width: 150px;
+    border-radius: 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 10px 10px 10px grey;
+}
+#image8-container{
+    background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg');
     height: 150px;
     width: 150px;
     border-radius: 25%;
@@ -123,6 +178,54 @@
     align-items: center;
 }
 #image4-container:hover #text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 25%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image5-container:hover #text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 25%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image6-container:hover #text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 25%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image7-container:hover #text {
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    height: 150px;
+    width: 150px;
+    margin-top: 15px;
+    border-radius: 25%;
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#image8-container:hover #text {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     height: 150px;
