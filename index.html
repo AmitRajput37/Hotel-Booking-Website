@@ -13,16 +13,8 @@
 
 <body>
 <div>
-    <header>
-        <div id="header">
-            <img id="logo" src="assests\images\logo.png" alt="logo">
-                <div id="login-button">
-                <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-                    data-target="#login-modal">
-                    LOGIN
-                </button></div>
-        </div>
-    </header>
+    <div id="body-container">
+    <header class="header" id="header"></header>
 
     <section>
         <div id="content">
@@ -82,42 +74,17 @@
                 </div>
             </div>
         </div>
-        <div>
-            <a id="view-more" href="index.html"><button type="button" class="btn btn-secondary" data-toggle="modal"
-                data-target="#login-modal">
+        <a id="view-more">
+            <button type="button" class="btn btn-secondary" data-toggle="modal"
+                id="view-button" onclick="viewMore()">
                 View More
-            </button></a>
-        </div>
+            </button>
+        </a>
 
-
+    </div>
     </section>
 
-    <footer>
-
-        <div id="footer-div">
-            <div id="contact-us">
-                <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
-                        data-target="#contact-us-modal">
-                        Contact Us
-                    </button>
-            </div>
-
-            <div id="copyright">
-                &copy; 2020 ROOM SEARCH PVT LTD.
-            </div>
-
-            <div id="social-media">
-                <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
-                        src="assests/images/facebook.png"></a>
-
-                <a href="https://www.instagram.com" target="_blank"><img class="social-media-img"
-                        src="assests/images/instagram.png"></a>
-
-                <a href="https://twitter.com" target="_blank"><img class="social-media-img"
-                        src="assests/images/twitter.png"></a>
-            </div>
-        </div>
-    </footer>
+    <footer class="footer" id="footer"></footer>
 
 <!-- Login-Modal -->
 <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -133,13 +100,13 @@ aria-hidden="true">
         <div class="modal-body">
             <form>
             <label>Username:</label>&nbsp
-            <input type="text" placeholder="Enter Username" class="form-control" required>
+            <input type="text" placeholder="Enter Username" class="form-control" id="uname" required>
             <br>
             <label>Password:</label>&nbsp
-            <input type="password" placeholder="Enter Password" class="form-control" required>
+            <input type="password" placeholder="Enter Password" class="form-control" id="pass" required>
         </div>
         <div class="modal-footer justify-content-center">
-            <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
+            <button type="button" class="btn btn-primary" data-dismiss="modal" onclick="login(event)">Login</button>
         </div>
     </form>
     </div>
@@ -173,6 +140,8 @@ aria-hidden="true">
 </div>
 </div>
 </div>
+<script src="scripts/common.js"></script>
+<script src="scripts/index.js"></script>
 </body>
 
 </html>

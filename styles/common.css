@@ -17,10 +17,10 @@ a{
 
 header{
     background-color: rosybrown;
-    width: 100%;
-    height: 60px;
+    /* width: 100%; */
+    /* height: 60px; */
     position: sticky;
-    top: 0;
+    /* top: 0; */
     
 }
 
@@ -79,12 +79,6 @@ footer{
 }
 
 #footer-div{
-    /* display: flex;
-    justify-content: space-between;
-    /* flex-direction: row; */
-    /* align-items: center;
-    align-content: center; */
-    /* margin-top: 50px; */ 
     display: flex;
     justify-content: center;
     align-items: center;

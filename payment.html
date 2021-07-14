@@ -13,134 +13,106 @@
 
 <body>
     <div>
-        <header>
-            <div id="header">
-                <img id="logo" src="assests\images\logo.png" alt="logo">
-                    <div id="login-button">
-                    <button type="button" class="btn btn-light btn-sm" data-toggle="modal"
-                        data-target="#login-modal">
-                        LOGIN
-                    </button></div>
-            </div>
-        </header>
+
+        <header class="header" id="header"></header>
+
         <section>
             <div id="hotel">
                 <div>
-                <img id="hotel-image"
-                    src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                    alt="Radisson Blu Hotel">
+                    <img id="hotel-image"
+                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
+                        alt="Radisson Blu Hotel">
                 </div>
                 <div id="hotel-info">
-                <h2>Radisson Blu Hotel</h2>
-                <p>#38 of 1,289 hotels in New Delhi</p>
-                <p>National Highway 8, New Delhi 110017 India</p>
-            </div>
+                    <h2>Radisson Blu Hotel</h2>
+                    <p>#38 of 1,289 hotels in New Delhi</p>
+                    <p>National Highway 8, New Delhi 110017 India</p>
+                </div>
             </div>
             <div id="all-info">
-            <div id="personal-information">
+                <div id="personal-information">
 
-                <p><b class="heading">Name:</b> John Doe</p>
-                <p><b class="heading">Number of Adults:</b> 2</p>
-                <p><b class="heading">Check-in Date:</b> 06/06/2020</p>
-                <p><b class="heading">Check-out Date:</b> 08/06/2020</p>
+                    <p><b class="heading">Name:</b> John Doe</p>
+                    <p><b class="heading">Number of Adults:</b> 2</p>
+                    <p><b class="heading">Check-in Date:</b> 06/06/2020</p>
+                    <p><b class="heading">Check-out Date:</b> 08/06/2020</p>
+
+                </div>
+                <div id="amount-details">
+                    <p><b class="heading">Tariff Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights</p>
+                    <p><b class="heading">Total Amount:</b> Rs. 10000</p>
+                </div>
+
+                <a href="#" id="pay-now">
+                    <button type="button" id="pay-now-button" class="btn btn-success" onclick="payNow(event)">
+                        Pay Now
+                    </button>
+                </a>
+
 
             </div>
-            <div id="amount-details">
-                <p><b class="heading">Tariff Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights</p>
-                <p><b class="heading">Total Amount:</b> Rs. 10000</p>
-            </div>
-            <div id="pay-now">
-                
-                <button type="button" class="btn btn-success" disabled data-toggle="modal"
-                data-target="#pay-now-modal">
-                Pay Now
-            </button>
-                
-            </div>
-        </div>
         </section>
-        <footer>
 
-            <div id="footer-div">
-                <div id="contact-us">
-                    <button type="button" class="btn btn-info btn-sm" data-toggle="modal"
-                            data-target="#contact-us-modal">
-                            Contact Us
+        <footer class="footer" id="footer"></footer>
+
+        <!-- Login-Modal -->
+        <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
                         </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <label>Username:</label>&nbsp
+                            <input type="text" placeholder="Enter Username" class="form-control" id="uname" required>
+                            <br>
+                            <label>Password:</label>&nbsp
+                            <input type="password" placeholder="Enter Password" class="form-control" id="pass" required>
+                    </div>
+                    <div class="modal-footer justify-content-center">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal"
+                            onclick="login(event)">Login</button>
+                    </div>
+                    </form>
                 </div>
-    
-                <div id="copyright">
-                    &copy; 2020 ROOM SEARCH PVT LTD.
-                </div>
-    
-                <div id="social-media">
-                    <a href="https://www.facebook.com" target="_blank"><img class="social-media-img"
-                            src="assests/images/facebook.png"></a>
-    
-                    <a href="https://www.instagram.com" target="_blank"><img class="social-media-img"
-                            src="assests/images/instagram.png"></a>
-    
-                    <a href="https://twitter.com" target="_blank"><img class="social-media-img"
-                            src="assests/images/twitter.png"></a>
-                </div>
             </div>
-        </footer>
-    
-    <!-- Login-Modal -->
-    <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Please Login</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <form>
-                <label>Username:</label>&nbsp
-                <input type="text" placeholder="Enter Username" class="form-control" required>
-                <br>
-                <label>Password:</label>&nbsp
-                <input type="password" placeholder="Enter Password" class="form-control" required>
-            </div>
-            <div class="modal-footer justify-content-center">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Login</button>
-            </div>
-        </form>
         </div>
-    </div>
-    </div>
-    
-    <!-- Contact-us-Modal -->
-    <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-    aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+
+        <!-- Contact-us-Modal -->
+        <div class="modal fade" id="contact-us-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Get in touch</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            Thank you for reaching out!!!<br>
+                            Please enter your email and we will get back to you.
+                            <br><br>
+                            <label>Email:</label>
+                            <input type="email" placeholder="Enter your email id">
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
+                    </div>
+                    </form>
+                </div>
             </div>
-            <div class="modal-body">
-                <form>
-                    Thank you for reaching out!!!<br>
-                    Please enter your email and we will get back to you.
-                    <br><br>
-                    <label>Email:</label>
-                    <input type="email" placeholder="Enter your email id">
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-dismiss="modal">Submit</button>
-            </div>
-        </form>
         </div>
-    </div>
-    </div>
 
     </div>
+    <script src="scripts/common.js"></script>
+    <script src="scripts/payment.js"></script>
 </body>
 
 </html>
