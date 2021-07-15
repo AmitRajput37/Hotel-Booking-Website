@@ -1,9 +1,11 @@
+<!DOCTYPE html>
 <html>
 
 <head>
     <title>List</title>
     <link href="styles\list.css" rel="stylesheet">
     <link href="styles\common.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
@@ -14,90 +16,32 @@
 
 <body>
     <div>
-
+        <div id="loader"></div>
         <header class="header" id="header"></header>
 
         <section>
-
+            <div id="list-container">
             <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
                 <li class="nav-item" role="presentation">
                     <a class="nav-link active" style="color: black;" id="pills-home-tab" data-toggle="pill"
-                        href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">List View</a>
+                    href="#list-view" role="tab" aria-controls="pills-home" aria-selected="true">List View</a>
                 </li>
                 <li class="nav-item" role="presentation">
                     <a class="nav-link" style="color: black;" id="pills-profile-tab" data-toggle="pill"
-                        href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Map
+                    href="#map-view" role="tab" aria-controls="pills-profile" aria-selected="false">Map
                         View</a>
                 </li>
             </ul>
-            <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                    <div class="hotel-image-list">
-                        <div class="hotel-image-container">
-                            <div class="hotels">
-                                <a href="detail.html"><img class="hotel-images"
-                                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                                        alt="Radisson Blu Hotel"></a>
-                            </div>
-                            <div class="hotel-info">
-                                <a href="detail.html" style="color: black; text-decoration: none;">
-                                    <h3>Radisson Blu Hotel</h3>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <span class="fa fa-star checked"></span>
-                                    <p>New Delhi</p>
-                                </a>
-                            </div>
-
-                        </div>
-
-                        <div class="hotel-image-container">
-                            <div>
-                                <img class="hotel-images"
-                                    src="https://media-cdn.tripadvisor.com/media/photo-w/15/06/31/5f/facade.jpg"
-                                    alt="The Lalit New Delhi">
-                            </div>
-                            <div class="hotel-info">
-                                <h3>The Lalit New Delhi</h3>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star-half-o"></span>
-                                <p>New Delhi</p>
-                            </div>
-                        </div>
-
-
-                        <div class="hotel-image-container">
-                            <div>
-                                <img class="hotel-images"
-                                    src="https://media-cdn.tripadvisor.com/media/photo-w/1b/4e/9b/11/exterior.jpg"
-                                    alt="Taj Palace">
-                            </div>
-                            <div class="hotel-info-3">
-                                <h3>Taj Palace</h3>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star checked"></span>
-                                <span class="fa fa-star"></span>
-                                <p>New Delhi</p>
-                            </div>
-                        </div>
-
-                    </div>
-
+            <div class="tab-content" id="pills-tab-content">
+                <div id="list-view" class="tab-pane fade show active">
+                    <div id="hotel-list"></div>
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
-                    <img src="https://cdn.pixabay.com/photo/2018/01/31/05/43/web-3120321_960_720.png" alt="Map View">
-
-
+                <div id="map-view" class="tab-pane fade">
+                    <div id="map"></div>
                 </div>
             </div>
-
+        </div>
+            
 
         </section>
 

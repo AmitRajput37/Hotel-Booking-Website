@@ -22,8 +22,6 @@
     height: 380px;
     justify-content: center;
     align-items: center;
-    /* position: relative; */
-    
 }
 
 #city-images-1{
@@ -53,6 +51,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image2-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/f0/goa.jpg');
@@ -65,6 +64,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image3-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg');
@@ -77,6 +77,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image4-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg');
@@ -89,6 +90,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image5-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/4d/46/b8/chennai-madras.jpg');
@@ -101,6 +103,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image6-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/15/33/fc/fc/agra.jpg');
@@ -113,6 +116,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image7-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/10/a3/3b/8a/screenshot-2017-09-12.jpg');
@@ -125,6 +129,7 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 #image8-container{
     background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/0c/d2/2f/7a/palace-from-the-outside.jpg');
@@ -137,96 +142,16 @@
     justify-content: center;
     align-items: center;
     box-shadow: 10px 10px 10px grey;
+    cursor: pointer;
 }
 
 #text{
     display: none;
 }
-#image1-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image2-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image3-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image4-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image5-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image6-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image7-container:hover #text {
-    background: rgba(0, 0, 0, 0.5);
-    color: #f1f1f1;
-    height: 150px;
-    width: 150px;
-    margin-top: 15px;
-    border-radius: 25%;
-    display: block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-#image8-container:hover #text {
+
+#image1-container:hover #text, #image2-container:hover #text, #image3-container:hover #text, #image4-container:hover #text, 
+#image5-container:hover #text, #image6-container:hover #text, #image7-container:hover #text, #image8-container:hover #text
+ {
     background: rgba(0, 0, 0, 0.5);
     color: #f1f1f1;
     height: 150px;

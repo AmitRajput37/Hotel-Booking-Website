@@ -4,6 +4,7 @@
     <title>Payment</title>
     <link href="styles\payment.css" rel="stylesheet">
     <link href="styles\common.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,43 +14,34 @@
 
 <body>
     <div>
-
+        <div id="loader"></div>
         <header class="header" id="header"></header>
 
         <section>
-            <div id="hotel">
-                <div>
-                    <img id="hotel-image"
-                        src="https://media-cdn.tripadvisor.com/media/photo-w/17/b3/09/b4/by-the-poolside.jpg"
-                        alt="Radisson Blu Hotel">
+            <div id="payment-container">
+                <div id="hotel-details">
+                    <img class="hotel-image" id="hotel-image" alt="hotel-image"> 
+                    <div class="hotel-name-rating">
+                        <h2 id="hotel-name"></h2>
+                        <p id="ranking"></p>
+                        <p id="address"></p>
+                    </div>
                 </div>
-                <div id="hotel-info">
-                    <h2>Radisson Blu Hotel</h2>
-                    <p>#38 of 1,289 hotels in New Delhi</p>
-                    <p>National Highway 8, New Delhi 110017 India</p>
+                <div id="customer-payment-details">
+                    <div id="customer-details">
+                        <p id="name"></p> 
+                        <p id="adult"></p>
+                        <p id="from-date"></p>
+                        <p id="to-date"></p>
+                    </div>
+                    <div id="payment-details">
+                        <p id="tariff"></p>
+                        <p id="amount"></p>
+                    </div>
+                    <a href="#" id="pay-now">
+                        <button id="pay-now-button" type="button" class="btn btn-success" onclick="payNow(event)">Pay Now</button>
+                    </a>
                 </div>
-            </div>
-            <div id="all-info">
-                <div id="personal-information">
-
-                    <p><b class="heading">Name:</b> John Doe</p>
-                    <p><b class="heading">Number of Adults:</b> 2</p>
-                    <p><b class="heading">Check-in Date:</b> 06/06/2020</p>
-                    <p><b class="heading">Check-out Date:</b> 08/06/2020</p>
-
-                </div>
-                <div id="amount-details">
-                    <p><b class="heading">Tariff Breakdown:</b> Rs. 1000 x 2 Adults x 5 Nights</p>
-                    <p><b class="heading">Total Amount:</b> Rs. 10000</p>
-                </div>
-
-                <a href="#" id="pay-now">
-                    <button type="button" id="pay-now-button" class="btn btn-success" onclick="payNow(event)">
-                        Pay Now
-                    </button>
-                </a>
-
-
             </div>
         </section>
 

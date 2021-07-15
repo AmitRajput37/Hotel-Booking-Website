@@ -73,7 +73,8 @@ section{
 footer{
     background-color: rosybrown;
     width: 100%;
-    position: sticky;
+    z-index: 1;
+    position: fixed;
     bottom: 0;
     height: 60px;
 }

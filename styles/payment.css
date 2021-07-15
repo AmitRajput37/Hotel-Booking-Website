@@ -3,32 +3,34 @@
     max-width: 270px;
 }
 
-#hotel{
+#hotel-details {
+    background-color: rgb(132, 136, 139);
+    width: 60%;
+    height: 20%;
+    margin: 2% auto;
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(132,136,139);
-    width: 45%;
-    margin-top: 6%;
-    margin-bottom: 2%;
-    margin-left: auto;
-    margin-right: auto;
-}
-#hotel-info{
-   /* padding: 10px; */
-   padding-right: 45px;
-   padding-top: 30px;
-   
-}
-#all-info{
-    display: flex;
-    border: 1px solid black;
-    border-radius: 5px;
-    margin: 10px;
-    justify-content: space-evenly;
     align-items: center;
-    margin-bottom: 10%;
-    margin-left: 2%;
-    margin-right: 2%;
+}
+
+#payment-container {
+    margin-top:7%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+
+.hotel-image {
+    max-height: 300px;
+    max-width: 270px;
+}
+#customer-payment-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 2%;
+    border: black 1px solid;
+    border-radius: 5px;
+    margin: 0% 2%;
     background-color: rosybrown;
 }
 .heading{

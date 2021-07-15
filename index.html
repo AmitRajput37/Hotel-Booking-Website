@@ -1,9 +1,10 @@
-<!-- <!DOCTYPE html> -->
+<!DOCTYPE html>
 
 <head>
     <title>Index</title>
     <link href="styles\index.css" rel="stylesheet">
     <link href="styles\common.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/loader.css">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -13,18 +14,21 @@
 
 <body>
 <div>
+    <div id="loader"></div>
     <div id="body-container">
     <header class="header" id="header"></header>
 
     <section>
         <div id="content">
-            <div>
+            <div id="search-input">
+                <form autocomplete="off">
                 <input id="search-bar" type="text" placeholder="City">
+            </form>
             </div>
         </div>
         <div id="city-images-1">
             <div id="city-image-container">
-                <a href="list.html" style="text-decoration: none;">
+                <a href="list.html?city=Delhi" style="text-decoration: none;">
                     <div id="image1-container">
                         <p id="text">Delhi</p>
                     </div>
@@ -32,46 +36,60 @@
             </div>
 
             <div id="city-image-container">
+                <a href="list.html?city=Goa" style="text-decoration: none;">
                 <div id="image2-container">
                     <p id="text">Goa</p>
                 </div>
+            </a>
             </div>
 
             <div id="city-image-container">
+                <a href="list.html?city=Hyderabad" style="text-decoration: none;">
                 <div id="image3-container">
                     <p id="text">Hyderabad</p>
                 </div>
+            </a>
             </div>
 
             <div id="city-image-container">
+                <a href="list.html?city=Kolkata" style="text-decoration: none;">
                 <div id="image4-container">
                     <p id="text">Kolkata</p>
                 </div>
+            </a>
             </div>
         </div>
         <div id="city-images-2">
             <div id="city-image-container">
+                <a href="list.html?city=Chennai" style="text-decoration: none;">
                     <div id="image5-container">
                         <p id="text">Chennai</p>
                     </div>
+                </a>
             </div>
 
             <div id="city-image-container">
+                <a href="list.html?city=Agra" style="text-decoration: none;">
                 <div id="image6-container">
                     <p id="text">Agra</p>
                 </div>
+            </a>
             </div>
 
             <div id="city-image-container">
+                <a href="list.html?city=Jaipur" style="text-decoration: none;">
                 <div id="image7-container">
                     <p id="text">Jaipur</p>
                 </div>
+            </a>
             </div>
 
             <div id="city-image-container">
+                <a href="list.html?city=Bengaluru" style="text-decoration: none;">
                 <div id="image8-container">
                     <p id="text">Bengaluru</p>
                 </div>
+            </a>
             </div>
         </div>
         <a id="view-more">
